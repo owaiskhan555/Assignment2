@@ -1,101 +1,46 @@
-import Image from "next/image";
+import React from 'react'
 
-export default function Home() {
+export default function page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+                  <div id="home" className="h-[1132px] w-[1440px] text-[#FFFFFF] bg-[#252B42] -top-[590px] -left-[720px]   ">
+       <div id="container" className=" w-[1046px] h-[1028px] absolute top-[104px] left-[197px] py-10 gap-10 ">
+          <div id="main-content" className=" flex flex-col gap-10 place-items-center text-center py-10" >
+    <h5 className="text-[#23A6F0] font-bold text-base tracking-[0.1px] w-[77px] h-6">Welcome</h5>
+    <h1 className="font-bold text-[58px] leading-[58px] w-[542px] h-[160px] ">Selling on the internet like a pro</h1>
+    <h4 className="font-normal text-xl leading-[30px] tracking-[0.2px] w-[536px] h-[50px] ">We know how large objects will act, but things on a small scale just do not act that way.</h4>
+      <div className='w-[365px] h-[52px] flex gap-[10px] '>
+      <button className='bg-[#23A6F0] py-4 px-10 rounded-[5px] font-bold text-sm leading-[22px] tracking-[0.2px] w-[193px] h-[52px] '>Get Quote Now</button>
+      <button className='  text-[#23A6F0] border border-[#23A6F0] py-[15px] rounded-[5px] font-bold text-sm leading-[22px] tracking-[0.2px] w-[162px] h-[52px] '>Learn More</button>
+      </div>
     </div>
-  );
+
+    <div className='w-[1046px] h-[292px] flex gap-[30px] py-10 '>
+            <div className='w-[328px] h-[292px] flex flex-col gap-5 bg-[#FFFFFF] py-[35px] px-10  '>
+              <div className='bg-[#FFDCD1] h-[76px] w-[70px] flex rounded-[10px] py-5 px-[19px] gap-[10px]  '></div>
+                  <h3 className='font-bold text-base tracking-[0.1px] text-[#252B42] '>training Courses</h3>
+                  <div className='w-[50px] h-[2px] bg-[#E74040] '></div>
+                  <p className='font-normal text-sm tracking-[0.2px] text-[#737373] '>The gradual accumulation of information about atomic and small-scale behaviour...</p>
+
+            </div>
+
+            <div className='w-[328px] h-[292px] flex flex-col gap-5 bg-[#FFFFFF] py-[35px] px-10  '>
+            <div className='bg-[#B9EAA8] h-[76px] w-[70px] flex rounded-[10px] py-5 px-[19px] gap-[10px]  '></div>
+            <h3 className='font-bold text-base tracking-[0.1px] text-[#252B42] '>2,769 online courses</h3>
+            <div className='w-[50px] h-[2px] bg-[#E74040] '></div>
+            <p className='font-normal text-sm tracking-[0.2px] text-[#737373] '>The gradual accumulation of information about atomic and small-scale behaviour...</p>
+            </div>
+
+            <div className='w-[328px] h-[292px] flex flex-col gap-5 bg-[#23A6F0] py-[35px] px-10 text-[#FFFFFF] '>
+            <div className='bg-[#FFFFFF] h-[76px] w-[70px] flex rounded-[10px] py-5 px-[19px] gap-[10px]  '></div>
+            <h3 className='font-bold text-base tracking-[0.1px] '>training Courses</h3>
+            <div className='w-[50px] h-[2px] bg-[#FFFFFF] '></div>
+            <p className='font-normal text-sm tracking-[0.2px] '>The gradual accumulation of information about atomic and small-scale behaviour...</p>
+            </div>
+
+        </div>
+
+        </div>
+
+      </div>
+  )
 }
